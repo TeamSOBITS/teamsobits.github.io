@@ -1,0 +1,21 @@
+{
+  "top": "トップ",
+  "news": "ニュース",
+  "people": "メンバー",
+  "about": "概要",
+  "research": "研究",
+  "publications": "成果物",
+  "faculties": "教員",
+  "phd-students": "博士課程",
+  "master-students": "修士課程",
+  "bachelor-students": "学士課程",
+  "robots": "ロボット",
+  "people-page": {
+    "title": "メンバー | TeamSOBITS"
+  },
+  "person-card": {
+    "research-topics": "研究テーマ",
+    "skills": "スキル",
+    "sns": "SNS"
+  }
+}

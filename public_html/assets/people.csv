@@ -1,0 +1,37 @@
+ID,氏名,Name,学年,研究室,Lab,研究テーマ,スキル,Avatar
+choi_lab-m2-adachi_daichi,足立 大地,ADACHI Daichi,M2,崔研究室,Choi Lab.,ステレオカメラによる距離計測システム,,./assets/images/avatars/choi_lab-m2-adachi_daichi.jpeg
+choi_lab-m2-hanajima_yusaku,花嶋 優作,HANAJIMA Yusaku,M2,崔研究室,Choi Lab.,ヘテロコア光ファイバセンサ、触覚センシング、制御、ものづくり工学,3DCAD、3Dプリンタ、CAM、CNC、CAE解析,./assets/images/avatars/choi_lab-m2-hanajima_yusaku.jpeg
+choi_lab-m2-suzuki_seito,鈴木 誠人,SUZUKI Seito,M2,崔研究室,Choi Lab.,案内ロボット開発,,./assets/images/avatars/choi_lab-m2-suzuki_seito.jpeg
+choi_lab-m2-yuhashi_kazuaki,油橋 和明,YUHASHI Kazuaki,M2,崔研究室,Choi Lab.,複数カメラによる人物の位置情報を用いた人数計測手法の開発,画像処理,./assets/images/avatars/choi_lab-m2-yuhashi_kazuaki.jpeg
+hagiwara_lab-m2-sim_jiahao,シム ジアハオ,SIM Jiahao,M2,萩原研究室,Hagiwara Lab.,言語・視覚情報と3次元環境理解に基づくモバイルマニピュレータの知能化,"Python, C++, ROS / ROS 2, Linux, Git / GitHub, Docker, SLAM, 3D Semantic Mapping, 3D Gaussian Splatting, LLM / VLM / VLA",./assets/images/avatars/hagiwara_lab-m2-sim_jiahao.jpeg
+hagiwara_lab-m2-wang_zhenyu,王 振宇,WANG Zhenyu,M2,萩原研究室,Hagiwara Lab.,セマンティックマップおよびロボットの環境・状況理解に関する研究開発,,./assets/images/avatars/hagiwara_lab-m2-wang_zhenyu.jpeg
+choi_lab-m1-jochi_ryo,城地 遼,JOCHI Ryo,M1,崔研究室,Choi Lab.,宇宙船内ロボットの自律移動,"ROS2, Docker, Python, GitHub, Claude Code",./assets/images/avatars/choi_lab-m1-jochi_ryo.jpeg
+choi_lab-m1-lee_junho,イ ジュンホ,LEE Junho,M1,崔研究室,Choi Lab.,ロボット基盤モデル,"ロボット設計とモデリング(CAD, 3dプリンタ)，VR遠隔操作",./assets/images/avatars/choi_lab-m1-lee_junho.jpeg
+choi_lab-m1-shigemori_masao,重森 正夫,Shigemori Masao,M1,崔研究室,Choi Lab.,画像認識、アプリケーション開発,,./assets/images/avatars/choi_lab-m1-shigemori_masao.jpeg
+choi_lab-m1-tanaka_yuto,田中 優斗,TANAKA Yuto,M1,崔研究室,Choi Lab.,移動機構、シミュレータ,,./assets/images/avatars/choi_lab-m1-tanaka_yuto.jpeg
+choi_lab-m1-yasufuku_kazuki,安福一輝,YASUFUKU Kazuki,M1,崔研究室,Choi Lab.,人物識別、ロボットカフェ、個別配膳、シミュレーター、アルタブマップ,DiscordBot、GAS、3Dプリンター、要旨添削,./assets/images/avatars/choi_lab-m1-yasufuku_kazuki.jpeg
+hagiwara_lab-m1-lucas_da_mota_bruno,ダ モタ ブルノ ルーカス,Lucas da Mota Bruno,M1,萩原研究室,Hagiwara Lab.,生活支援ロボットの長期タスクプランニング、LLMチェイニング、言語・視覚情報の意味的グラウンディング,生活支援ロボット開発（Toyota HSR）、LLMベースのタスクプランニング、画像処理・OCR、ROS 2、Gazebo、Docker、GitHub、VS Code,./assets/images/avatars/hagiwara_lab-m1-lucas_da_mota_bruno.jpeg
+hagiwara_lab-m1-masuda_sota,増田 創太,MASUDA Sota,M1,萩原研究室,Hagiwara Lab.,マルチモーダル情報を用いた多人数環境における話しかけ者推定,,./assets/images/avatars/hagiwara_lab-m1-masuda_sota.jpeg
+hagiwara_lab-m1-sato_kenta,佐藤健太,SATO Kenta,M1,萩原研究室,Hagiwara Lab.,ロボット基盤モデル,Python GitHub Docker ,./assets/images/avatars/hagiwara_lab-m1-sato_kenta.jpeg
+choi_lab-faculty-choi_yongwoon,崔 龍雲,CHOI Yongwoon,Faculty,崔研究室,Choi Lab.,ステレオカメラによる距離計測システム,,./assets/images/avatars/choi_lab-faculty-choi_yongwoon.jpeg
+hagiwara_lab-faculty-hagiwara_yoshinobu,萩原 良信,HAGIWARA Yoshinobu,Faculty,萩原研究室,Hagiwara Lab.,知覚情報処理・知能情報学・知能ロボティクス・記号創発ロボティクス,,./assets/images/avatars/hagiwara_lab-faculty-hagiwara_yoshinobu.jpeg
+hagiwara_lab-d2-valentin_keith,バレンティン ケイト ,VALENTIN Keith,D2,萩原研究室,Hagiwara Lab.,異種ロボットにおけるMorphology学習とそのBehavior Learning,"ロボット設計とモデリング(CAD, 3dプリンタ)，電子回路工作，ロボット制御，データ駆動学習(RL/VLA/WAM)，シミュレータ構築，",./assets/images/avatars/hagiwara_lab-d2-valentin_keith.jpeg
+hagiwara_lab-d1-ikeda_yuki,池田 勇輝,IKEDA Yuki,D1,萩原研究室,Hagiwara Lab.,宇宙における知能ロボティクス,,./assets/images/avatars/hagiwara_lab-d1-ikeda_yuki.jpeg
+choi_lab-b4-hosaka_yuko,保坂 優子,HOSAKA Yuko,B4,崔研究室,Choi Lab.,実機ロボット教材SOBIT-Beginを用いた計算論 的思考力の育成と評価,"Python, C++, Java/JavaScript, HTML, ROS2, GitHub, Webサイト・アプリ開発, データサイエンス",./assets/images/avatars/choi_lab-b4-hosaka_yuko.jpeg
+choi_lab-b4-ito_masahide,伊藤 匡秀,ITO Masahide,B4,崔研究室,Choi Lab.,VLA学習データ品質評価のための物体可視率自動算出手法の検証,,./assets/images/avatars/choi_lab-b4-ito_masahide.jpeg
+choi_lab-b4-kaneda_yua,金田 優空,KANEDA Yua,B4,崔研究室,Choi Lab.,人追従システム、自己位置推定,,./assets/images/avatars/choi_lab-b4-kaneda_yua.jpeg
+choi_lab-b4-kobayashi_kazuma,小林 和真,KOBAYASHI Kazuma,B4,崔研究室,Choi Lab.,エレベーターにおけるWi-Fiによる階層認識,"データベース, GitHub, Docker",./assets/images/avatars/choi_lab-b4-kobayashi_kazuma.jpeg
+choi_lab-b4-lee_yunwoo,イ ユンウ,LEE Yunwoo,B4,崔研究室,Choi Lab.,"Sim2Real, ",,./assets/images/avatars/choi_lab-b4-lee_yunwoo.jpeg
+choi_lab-b4-murakami_yoko,村上 世佑子　,MURAKAMI Yoko,B4,崔研究室,Choi Lab.,コミュニケーションロボット、記憶構築、画像処理,"github、HTML、css、python、ros1,ros2、ゲーム作成、障害者支援、高校生教育",./assets/images/avatars/choi_lab-b4-murakami_yoko.jpeg
+hagiwara_lab-b4-hamachi_daiyo,濵地 大洋,HAMACHI Daiyo,B4,萩原研究室,Hagiwara Lab.,場所概念モデル,,./assets/images/avatars/hagiwara_lab-b4-hamachi_daiyo.jpeg
+hagiwara_lab-b4-hibiki_tsuchiya,土屋 響,HIBIKI Tsuchiya,B4,萩原研究室,Hagiwara Lab.,,,./assets/images/avatars/hagiwara_lab-b4-hibiki_tsuchiya.jpeg
+hagiwara_lab-b4-okitani_mizuho,沖谷 瑞保,OKITANI Mizuho,B4,萩原研究室,Hagiwara Lab.,マルチモーダル人物概念に基づく長期的なサービスロボットのための人物理解・個人化,"Python, C++, ROS 2, Computer Vision, Multimodal Learning, CLIP, CLAP, YOLO, Nav2,  PostgreSQL, Docker",./assets/images/avatars/hagiwara_lab-b4-okitani_mizuho.jpeg
+hagiwara_lab-b4-owada_kaiji,大和田 海慈,OWADA Kaiji,B4,萩原研究室,Hagiwara Lab.,自動カリキュラム、クリーンアーキテクチャ,"GitHub, VSCode",./assets/images/avatars/hagiwara_lab-b4-owada_kaiji.jpeg
+hagiwara_lab-b4-uema_yura,上間 友愛,UEMA Yura,B4,萩原研究室,Hagiwara Lab.,音声、ロボット、セマンティック,,./assets/images/avatars/hagiwara_lab-b4-uema_yura.jpeg
+choi_lab-b3-nakane_masayuki,中根正幸,NAKANE Masayuki,B3,崔研究室,Choi Lab.,,,./assets/images/avatars/choi_lab-b3-nakane_masayuki.jpeg
+choi_lab-b3-shikama_kentaro,色摩 健太朗,SHIKAMA Kentaro,B3,崔研究室,Choi Lab.,視覚言語モデル、自律移動,,./assets/images/avatars/choi_lab-b3-shikama_kentaro.jpeg
+choi_lab-b3-zhang_haoran,張 浩然,Zhang Haoran,B3,崔研究室,Choi Lab.,ロボカフェ開発,,./assets/images/avatars/choi_lab-b3-zhang_haoran.jpeg
+hagiwara_lab-b3-kajihara_shigenori,梶原 成紀,KAJIHARA Shigenori,B3,萩原研究室,Hagiwara Lab.,,,./assets/images/avatars/hagiwara_lab-b3-kajihara_shigenori.jpeg
+hagiwara_lab-b3-okamoto_ayumi,岡本 愛結,OKAMOTO Ayumi,B3,萩原研究室,Hagiwara Lab.,,"Unity,Blender,デザイン,イラスト",./assets/images/avatars/hagiwara_lab-b3-okamoto_ayumi.jpeg
+hagiwara_lab-b3-shiiba_yoshihisa,椎葉 義寿,SHIIBA Yoshihisa,B3,萩原研究室,Hagiwara Lab.,,,./assets/images/avatars/hagiwara_lab-b3-shiiba_yoshihisa.jpeg
+hagiwara_lab-b3-yonemitsu_riko,米満 莉子,YONEMITSU Riko,B3,萩原研究室,Hagiwara Lab.,,ROS2，Python，Docker，GitHub，3D CAD（Onshape），基本情報技術者,./assets/images/avatars/hagiwara_lab-b3-yonemitsu_riko.jpeg

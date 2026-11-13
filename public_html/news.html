@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+
+<head>
+  <title>Team SOBITS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=0.5" />
+  <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->
+  <meta name="description" content="創価大学 Team SOBITSは、〜" />
+  <link rel="canonical" href="https://home.soka.ac.jp/~teamsobits/news/" />
+
+  <meta property="og:url" content="https://home.soka.ac.jp/~teamsobits/news/" />
+  <meta property="og:title" content="創価大学 Team SOBITS" />
+  <meta property="og:description" content="創価大学 Team SOBITSは、〜" />
+  <!-- meta property="og:image" content="後で、追加" /-->
+
+  <meta name="apple-mobile-web-app-title" content="創価大学 Team SOBITS">
+  <!-- link rel="icon" type="image/png" href="画像追加"-->
+  <link rel="icon" type="image/png" href="img/icon.png">
+
+  <meta name="format-detection" content="email=no,telephone=no,address=no" />
+  <!--=============Google Font ===============-->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/vegas-2.5.4/vegas-2.5.4.min.css" />
+  <link rel="stylesheet" href="./css/news.css" />
+  <link rel="stylesheet" href="./css/fontisto-master/css/fontisto/fontisto.min.css" />
+
+  <script src="./js/vendor/modernizr.custom.min.js"></script>
+  <script src="./js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="./js/vendor/jquery-ui-1.12.1.min.js"></script>
+  <script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="./js/vendor/vegas-2.5.4/vegas.min.js"></script>
+  <script src="./js/vendor/shuffle-text/shuffle-text.min.js"></script>
+  <script src="./js/vendor/chaffle.min.js"></script>
+  <script src="./js/vendor/jquery.smooth-scroll.min.js"></script>
+  <script src="./js/news.js"></script>
+  <script src="./js/move_to_page.js"></script>
+
+</head>
+
+<body>
+  <div id="sample1">
+    <!-- <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked> -->
+    <label for="sJa">
+      <span class="langCng" lang="ja"></span>
+      <span class="langCng" lang="en"></span>
+    </label>
+   
+    <!-- <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')"> -->
+    <label for="sEn">
+      <span class="langCng" lang="ja"></span>
+      <span class="langCng" lang="en"></span>
+    </label>
+
+    <header id="page-header" role="banner">
+      <div class="inner">
+        <h1 class="site-logo"> <a href="./index.html"><img src="./img/header_logo.png" alt="崔研究室" height="70"
+              width=""></a>
+        </h1>
+        <div class="banner-nav-openbtn">
+          <div class="openbtn-area"><span></span><span></span><span></span></div>
+        </div>
+        <nav id="banner-nav" role="navigation">
+          <div id="banner-nav-list">
+            <ul id="banner-navi" class="nav01c">
+              <!-- <li><a href="./index.html">Top</a></li> -->
+              <li class="langCng" lang="ja">
+                <a href="javascript:void(0)" onclick="moveToPage('ja', './index.html')">Top</a>
+              </li>
+              <li class="langCng" lang="en">
+                <a href="javascript:void(0)" onclick="moveToPage('en', './index.html')">Top</a>
+              </li>
+
+              <!-- <li><a href="./about.html">About</a></li> -->
+              <li class="langCng" lang="ja">
+                <a href="javascript:void(0)" id="sJa" onclick="moveToPage('ja', './about.html')">About</a>
+              </li>
+              <li class="langCng" lang="en">
+                <a href="javascript:void(0)" id="sEn" onclick="moveToPage('en', './about.html')">About</a>
+              </li>
+
+              <!-- <li><a href="./research.html">Research</a></li> -->
+              <li class="langCng" lang="ja">
+                <a href="javascript:void(0)" id="sJa" onclick="moveToPage('ja', './research.html')">Research</a>
+              </li>
+              <li class="langCng" lang="en">
+                <a href="javascript:void(0)" id="sEn" onclick="moveToPage('en', './research.html')">Research</a>
+              </li>
+
+              <!-- <li><a href="./robot.html">Robots</a></li> -->
+              <li class="langCng" lang="ja">
+                <a href="javascript:void(0)" id="sJa" onclick="moveToPage('ja', './robot.html')">Robots</a>
+              </li>
+              <li class="langCng" lang="en">
+                <a href="javascript:void(0)" id="sEn" onclick="moveToPage('en', './robot.html')">Robots</a>
+              </li>
+
+              <!-- <li><a href="./publication.html">Publications</a></li> -->
+              <li class="gnavi__list langCng" lang="ja"><a href="javascript:void(0)" onclick="moveToPage('ja', './publication.html')">Publications</a>
+                <ul class="dropdown__lists__pub">
+                  <li class="dropdown__list langCng" lang="ja"><a href="publication.html?lang=ja#RoboCup-area"><p class="px2">Awards for Academic Activities</p></a></li>
+                    <!-- <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')"> -->
+                  <li class="dropdown__list langCng" lang="ja"><a href="publication.html?lang=ja#International conference-area"><p class="px2">International conferences</p></a></li>
+                    <!-- <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')"> -->
+                  <!-- <li class="dropdown__list langCng" lang="ja"><a href="publication.html?#Domestic conference-area" name="langKbn" id="sJa" onClick="langSet('ja')"><p class="px2">Domestic conferences (Japan)</p></a></li> -->
+                  <li class="dropdown__list langCng" lang="ja"><a href="publication.html?lang=ja#Domestic conference-area"><p class="px2">Domestic conferences (Japan)</p></a></li>
+                </ul>
+              </li>
+              <li class="gnavi__list langCng" lang="en"><a href="javascript:void(0)" onclick="moveToPage('en', './publication.html')">Publications</a>
+                <ul class="dropdown__lists__pub">
+                  <li class="dropdown__list langCng" lang="en"><a href="publication.html?lang=en#RoboCup-area"><p class="px2">Awards for Academic Activities</p></a></li>
+                    <!-- <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')"> -->
+                  <li class="dropdown__list langCng" lang="en"><a href="publication.html?lang=en#International conference-area"><p class="px2">International conferences</p></a></li>
+                    <!-- <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')"> -->
+                  <li class="dropdown__list langCng" lang="en"><a href="publication.html?lang=en#Domestic conference-area"><p class="px2">Domestic conferences (Japan)</p></a></li>
+                </ul>
+              </li>
+
+              <!-- <li><a href="./news.html">News</a></li> -->
+              <li class="langCng" lang="ja">
+                <a href="javascript:void(0)" id="sJa" onclick="scrollToTop()">News</a>
+              </li>
+              <li class="langCng" lang="en">
+                <a href="javascript:void(0)" id="sEn" onclick="scrollToTop()">News</a>
+              </li>
+
+              <!--li><a href="https://twitter.com/takebaaaaaaaa" target="_blank" rel="noopener noreferrer">Sasano</a></li-->
+              <!-- <li><a href="./member.html">People</a></li> -->
+              <li class="langCng" lang="ja">
+                <a href="./people.html" id="sJa">People</a>
+              </li>
+              <li class="langCng" lang="en">
+                <a href="./people.html" id="sEn">People</a>
+              </li>
+
+              <!-- <li><a href="#">Langage</a></li> -->
+              <div class="gnavi__wrap">
+                <ul class="gnavi__lists">
+                    <li class="gnavi__list"><a href="#">Language</a>
+                      <ul class="dropdown__lists">
+                        <li class="dropdown__list"><a href="javascript:void(0)" name="langKbn" id="sJa" onClick="langSet('ja')">Japanese</a></li>
+                          <!-- <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')"> -->
+                        <li class="dropdown__list"><a href="javascript:void(0)" name="langKbn" id="sEn" onClick="langSet('en')">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <main id="page-main">
+      <section id="news">
+        <ul>
+          <li>
+            <div class="news-area">
+              <!-- <a class="news-img" href="./news/20250517.html"><span class="mask"><img
+                    src="./img/news/2025.05.17.jpg"></span></a> -->
+              <a class="news-img langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20250517.html')"><span class="mask"><img
+                    src="./img/news/2025.05.17.jpg"></span></a>
+              <a class="news-img langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20250517.html')"><span class="mask"><img
+                    src="./img/news/2025.05.17.jpg"></span></a>
+              <!-- <a class="news-title" href="./news/20250517.html"> -->
+              <a class="news-title langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20250517.html')">
+                <p>滋賀で開催されたRoboCup@Home JapanOpen 2025 に参加しました</p>
+              </a>
+              <a class="news-title langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20250517.html')">
+                <p>We participated in RoboCup@Home JapanOpen 2025 held in Shiga</p>
+              </a>
+              <p class="news-date">2025.05.17</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <!-- <a class="news-img" href="./news/20250423.html"><span class="mask"><img
+                    src="./img/news/2025.04.23_1.jpg"></span></a> -->
+              <a class="news-img langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20250423.html')"><span class="mask"><img
+                    src="./img/news/2025.04.23_1.jpg"></span></a>
+              <a class="news-img langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20250423.html')"><span class="mask"><img
+                    src="./img/news/2025.04.23_1.jpg"></span></a>
+              <!-- <a class="news-title" href="./news/20250423.html">
+                <p class="langCng" lang="ja">新年度のご挨拶と新体制について</p>
+                <p class="langCng" lang="en">Greetings for the new fiscal year and new organization</p>
+              </a> -->
+              <a class="news-title langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20250423.html')">
+                <p>新年度のご挨拶と新体制について</p>
+              </a>
+              <a class="news-title langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20250423.html')">
+                <p>Greetings for the new fiscal year and new organization</p>
+              </a>
+              <p class="news-date">2025.04.23</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <!-- <a class="news-img" href="./news/20250313.html"><span class="mask"><img
+                    src="./img/news/default.png"></span></a> -->
+              <a class="news-img langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20250313.html')"><span class="mask"><img
+                    src="./img/news/default.png"></span></a>
+              <a class="news-img langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20250313.html')"><span class="mask"><img
+                    src="./img/news/default.png"></span></a>
+              <!-- <a class="news-title" href="./news/20250313.html">
+                <p class="langCng" lang="ja">SOBITSのメールアドレスが変わりました</p>
+                <p class="langCng" lang="en">SOBITS' email address has changed</p>
+              </a> -->
+              <a class="news-title langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20250313.html')">
+                <p>SOBITSのメールアドレスが変わりました</p>
+              </a>
+              <a class="news-title langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20250313.html')">
+                <p>SOBITS' email address has changed</p>
+              </a>
+              <p class="news-date">2025.03.13</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <!-- <a class="news-img" href="./news/20241212.html"><span class="mask"><img
+                    src="./img/news/2024.12.12_1.jpg"></span></a> -->
+              <a class="news-img langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20241212.html')"><span class="mask"><img
+                    src="./img/news/2024.12.12_1.jpg"></span></a>
+              <a class="news-img langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20241212.html')"><span class="mask"><img
+                    src="./img/news/2024.12.12_1.jpg"></span></a>
+              <!-- <a class="news-title" href="./news/20241212.html">
+                <p class="langCng" lang="ja">iHR研究会に参加しました</p>
+                <p class="langCng" lang="en">Participated in the iHR Study Group</p>
+              </a> -->
+              <a class="news-title langCng" lang="ja" href="javascript:void(0)" onclick="moveToPage('ja', './news/20241212.html')">
+                <p>iHR研究会に参加しました</p>
+              </a>
+              <a class="news-title langCng" lang="en" href="javascript:void(0)" onclick="moveToPage('en', './news/20241212.html')">
+                <p>Participated in the iHR Study Group</p>
+              </a>
+              <p class="news-date">2024.12.12</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2024.10.03.html"><span class="mask"><img
+                    src="./img/news/2024.10.03_1.jpg"></span></a>
+              <a class="news-title" href="./news/2024.10.03.html">
+                <p class="langCng" lang="ja">創価インターナショナルスクール・マレーシアを訪問しました</p>
+                <p class="langCng" lang="en">Visit to Soka International School Malaysia</p>
+              </a>
+              <p class="news-date">2024.10.03</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2024.09.09.html"><span class="mask"><img
+                    src="./img/news/2024.09.09_1.jpg"></span></a>
+              <a class="news-title" href="./news/2024.09.09.html">
+                <p class="langCng" lang="ja">RoboCup Malaysia Open 2024 に参加しました</p>
+                <p class="langCng" lang="en">Participated in RoboCup Malaysia Open 2024</p>
+              </a>
+              <p class="news-date">2024.09.09</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2024.04.29.html"><span class="mask"><img
+                    src="./img/news/2024.04.29.jpg"></span></a>
+              <a class="news-title" href="./news/2024.04.29.html">
+                <p class="langCng" lang="ja">滋賀で開催されたRoboCup@Home JapanOpen 2024 に参加しました</p>
+                <p class="langCng" lang="en">We participated in RoboCup@Home JapanOpen 2024 held in Shiga</p>
+              </a>
+              <p class="news-date">2024.04.29</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2024.01.12.html"><span class="mask"><img
+                    src="./img/news/2024.01.12.jpg"></span></a>
+              <a class="news-title" href="./news/2024.01.12.html">
+                <p class="langCng" lang="ja">韓国・慶尚国立大学と技術交流会を行いました！</p>
+                <p class="langCng" lang="en">Technical exchange meeting was held with Gyeongsang National University in Korea!</p>
+              </a>
+              <p class="news-date">2024.01.12</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2023.09.25.html"><span class="mask"><img
+                    src="./img/news/2023.09.25.jpg"></span></a>
+              <a class="news-title" href="./news/2023.09.25.html">
+                <p class="langCng" lang="ja">合同技術交流会を開催しました！</p>
+                <p class="langCng" lang="en">A technical exchange meeting was held!</p>
+              </a>
+              <p class="news-date">2023.09.25</p>
+            </div>
+          </li><li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2023.07.11.html"><span class="mask"><img
+                    src="./img/news/2023.07.11.jpg"></span></a>
+              <a class="news-title" href="./news/2023.07.11.html">
+                <p class="langCng" lang="ja">フランスのボルドーで開催されたRoboCup@Home 2023 に参加しました</p>
+                <p class="langCng" lang="en">RoboCup Mock Tournament was held at Open Campus in Soka University on 7/30 and 7/31.</p>
+              </a>
+              <p class="news-date">2023.07.11</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2023.05.08.html"><span class="mask"><img
+                    src="./img/news/2023.05.08.jpg"></span></a>
+              <a class="news-title" href="./news/2023.05.08.html">
+                <p class="langCng" lang="ja">滋賀で開催されたRoboCup@Home JapanOpen 2023 に参加しました</p>
+                <p class="langCng" lang="en">RoboCup Mock Tournament was held at Open Campus in Soka University on 7/30 and 7/31.</p>
+              </a>
+              <p class="news-date">2023.05.08</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2023.03.10.html"><span class="mask"><img
+                    src="./img/news/2023.03.10.jpg"></span></a>
+              <a class="news-title" href="./news/2023.03.10.html">
+                <p class="langCng" lang="ja">東京大学で開催されたRoboCup@Home JapanOpen 2022 に参加しました</p>
+                <p class="langCng" lang="en">RoboCup Mock Tournament was held at Open Campus in Soka University on 7/30 and 7/31.</p>
+              </a>
+              <p class="news-date">2023.03.10</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2022.10.26.html"><span class="mask"><img
+                    src="./img/news/2022.10.26.jpg"></span></a>
+              <a class="news-title" href="./news/2022.10.26.html">
+                <p class="langCng" lang="ja">国立京都国際会議館で開催されたRoboCup@Home JapanOpen 2022 Simulation OPLに参加しました</p>
+                <p class="langCng" lang="en">RoboCup Mock Tournament was held at Open Campus in Soka University on 7/30 and 7/31.</p>
+              </a>
+              <p class="news-date">2022.10.26</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2022.07.31.html"><span class="mask"><img
+                    src="./img/news/2022.07.31.jpg"></span></a>
+              <a class="news-title" href="./news/2022.07.31.html">
+                <p class="langCng" lang="ja">7/30,7/31のオープンキャンパスでRoboCup模擬大会を行いました</p>
+                <p class="langCng" lang="en">RoboCup Mock Tournament was held at Open Campus in Soka University on 7/30 and 7/31.</p>
+              </a>
+              <p class="news-date">2022.07.31</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2022.03.25.html"><span class="mask"><img
+                    src="./img/news/2022.03.25.jpg"></span></a>
+              <a class="news-title" href="./news/2022.03.25.html">
+                <p class="langCng" lang="ja">ロボカップジャパンオープン大会に参加しました</p>
+                <p class="langCng" lang="en">Participation in RoboCup Japan Open 2021</p>
+              </a>
+              <p class="news-date">2022.03.25</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2021.12.03.html"><span class="mask"><img
+                    src="./img/news/2021.12.03.jpg"></span></a>
+              <a class="news-title" href="./news/2021.12.03.html">
+                <p class="langCng" lang="ja">ロボカップアジアパシフィック大会に参加しました</p>
+                <p class="langCng" lang="en">Participation in RoboCup Asia Pacific 2021</p>
+              </a>
+              <p class="news-date">2021.12.03</p>
+            </div>
+          </li>
+          <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2021.08.15.html"><span class="mask"><img
+                    src="./img/news/default.png"></span></a>
+              <a class="news-title" href="./news/2021.08.15.html">
+                <p class="langCng" lang="ja">webサイトのリニューアル</p>
+                <p class="langCng" lang="en">Website renewal</p>
+              </a>
+              <p class="news-date">2021.08.15</p>
+            </div>
+          </li>
+          
+          <!-- <li>
+            <div class="news-area">
+              <a class="news-img" href="./news/2021.07.15.html"><span class="mask"><img src="./img/news/2021.07.15-2.jpg"></span></a>
+              <a class="news-title" href="./news/2021.07.15.html">
+                <p>笹野幸一リーダーの誕生日を祝いました</p>
+              </a>
+              <p class="news-date">2021.07.15</p>
+            </div>
+          </li>  -->
+        </ul>
+      </section>
+
+    </main>
+    <footer id="footer">
+      <div>
+        <section id="footer-info">
+          <h1 class="site-logo"> <a href="./index.html"><img src="./img/header_logo.png" alt="崔研究室" height="70"
+                width=""></a>
+          </h1>
+          <address class="langCng" lang="ja">〒192-8577 東京都八王子市丹木町192-0003 創価大学F棟 崔研究室、萩原研究室</address>
+          <address class="langCng" lang="en">192-8577 Choi Laboratory and Hagiwara Laboratory, F Building, Soka University, 192-0003 Tangi-cho, Hachioji-shi, Tokyo, Japan, Japan </address>
+          <ul>
+            <li>
+              <dl>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:team.sobits@gmail.com">team.sobits@gmail.com</a></dd>
+              </dl>
+            </li>
+
+          </ul>
+        </section>
+        <section id="footer-link">
+          <ul class="site-map">
+            <li><a href="./index.html">Top</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./research.html">Research</a></li>
+            <li><a href="./robot.html">Robots</a></li>
+            <li><a href="./publication.html">Publications</a></li>
+            <li><a href="./news.html">News</a></li>
+            <!--li><a href="https://twitter.com/takebaaaaaaaa" target="_blank" rel="noopener noreferrer">Sasano</a></li-->
+            <li><a href="./member.html">People</a></li>
+          </ul>
+          <ul class="sns-map">
+            <li><a href="https://www.facebook.com/team.sobits" target="_blank" rel="noopener noreferrer"><i
+                  class="fi fi-facebook"></i></a></li>
+            <li><a href="https://twitter.com/sobits_soka" target="_blank" rel="noopener noreferrer"><i
+                  class="fi fi-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/sobits_soka" target="_blank" rel="noopener noreferrer"><i
+                  class="fi fi-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/@teamsobits9311" target="_blank"
+                rel="noopener noreferrer"><i class="fi fi-youtube-play"></i></a></li>
+          </ul>
+        </section>
+      </div>
+      <button type="button" id="page-top-button">
+        <i class="fi fi-angle-up"></i>
+      </button>
+      <small>Copyright &copy; Team SOBITS All rights Reserved.</small>
+    </footer>
+
+</body>
+
+</html>

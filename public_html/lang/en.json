@@ -1,0 +1,21 @@
+{
+  "top": "Top",
+  "news": "News",
+  "about": "About",
+  "research": "Research",
+  "publications": "Publications",
+  "people": "People",
+  "faculties": "Faculty",
+  "phd-students": "Ph.D. Students",
+  "master-students": "Master Students",
+  "bachelor-students": "Bachelor Students",
+  "robots": "Robots",
+  "people-page": {
+    "title": "People | TeamSOBITS"
+  },
+  "person-card": {
+    "research-topics": "Research Topic",
+    "skills": "Skills",
+    "sns": "SNS"
+  }
+}

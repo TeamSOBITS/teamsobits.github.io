@@ -1,0 +1,163 @@
+:root {
+  --soka-blue: #323c99;
+  --header-height: 4rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  color: white;
+  background-color: black;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  padding: 0.5rem 3rem;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: var(--soka-blue);
+
+  z-index: 999;
+}
+
+main {
+  padding: var(--header-height) 8rem 0 8rem;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.header-logo__image {
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.header-nav a {
+  color: white;
+
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.person-card {
+  width: 32rem;
+  padding: 2rem;
+
+  border-radius: 0.5rem;
+  border: solid 1px skyblue;
+  background-color: black;
+
+  color: white;
+}
+
+.person-card__details {
+  flex: 1;
+}
+
+.people-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.person-card .person-card-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-card-mini__avatar img {
+  width: 240px;
+  height: 240px;
+
+  border-radius: 9999px;
+
+  object-fit: cover;
+}
+
+.person-card-mini__avatar img:hover {
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+.person-card .person-card-mini__avatar img:hover {
+  filter: none;
+  cursor: default;
+}
+
+.person-card .person-card-mini__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-card-mini__name {
+  overflow-wrap: anywhere;
+  color: skyblue;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.person-card-mini__details {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+
+  color: darkgray;
+  font-size: small;
+}
+
+/* Modal */
+
+/*
+  Use # (id) for person-modal to ensure the HTML has single person-modal
+  so that `document.getElementById()` is available.
+*/
+#person-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+
+  z-index: 9999;
+}
+
+#person-modal.is-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
