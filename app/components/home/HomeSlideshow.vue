@@ -1,19 +1,23 @@
 <script setup lang="ts">
 /**
- * トップのファーストビュー
- * スライドショー＋キャッチコピー＋SNS リンク＋スクロール誘導
+ * トップページの一番上のセクション
+ * スライドショー＋キャッチコピー（We are SOBITS.）＋SNS リンク＋「Scroll」の表示
  */
 
-/** スライド画像（public/ からのパス）。順番どおりに表示する */
+/**
+ * スライド画像の一覧（public/ からのパス）。上から順に表示する
+ * 写真を変えるときは、public/images/home/slideshow/ の画像とこの一覧の両方を直す
+ */
 const SLIDES = [
-  '/images/home/hero/01.jpg',
-  '/images/home/hero/02.jpg',
-  '/images/home/hero/03.jpg',
-  '/images/home/hero/04.jpg',
-  '/images/home/hero/05.jpg',
-  '/images/home/hero/06.jpg',
-  '/images/home/hero/07.jpg',
+  '/images/home/slideshow/01.jpg',
+  '/images/home/slideshow/02.jpg',
+  '/images/home/slideshow/03.jpg',
+  '/images/home/slideshow/04.jpg',
+  '/images/home/slideshow/05.jpg',
+  '/images/home/slideshow/06.jpg',
+  '/images/home/slideshow/07.jpg',
 ]
+
 /** 1枚あたりの表示時間（ミリ秒） */
 const INTERVAL = 6000
 
@@ -21,6 +25,8 @@ const current = ref(0)
 let timer: ReturnType<typeof setInterval> | undefined
 
 onMounted(() => {
+  // 画像が1枚以下なら切り替えない
+  if (SLIDES.length < 2) return
   timer = setInterval(() => {
     current.value = (current.value + 1) % SLIDES.length
   }, INTERVAL)
@@ -29,7 +35,7 @@ onBeforeUnmount(() => clearInterval(timer))
 </script>
 
 <template>
-  <section class="hero">
+  <section class="top-section">
     <div class="slideshow" aria-hidden="true">
       <NuxtImg
         v-for="(src, i) in SLIDES"
@@ -45,7 +51,7 @@ onBeforeUnmount(() => clearInterval(timer))
       />
     </div>
 
-    <ShuffleText tag="h1" class="catch" :text="$t('home.hero.catch')" />
+    <ShuffleText tag="h1" class="catch" :text="$t('home.slideshow.catch')" />
 
     <div class="follow">
       <p>{{ $t('common.followUs') }}</p>
@@ -57,7 +63,7 @@ onBeforeUnmount(() => clearInterval(timer))
 </template>
 
 <style scoped>
-.hero {
+.top-section {
   position: relative;
   /* ヘッダーを除いた画面の高さいっぱい */
   height: calc(100svh - var(--header-height));
@@ -65,27 +71,6 @@ onBeforeUnmount(() => clearInterval(timer))
   overflow: hidden;
   color: var(--color-on-dark);
   background: var(--color-dark);
-}
-
-/* 右下から伸びてくる青い帯 */
-.hero::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  width: 50%;
-  height: 12%;
-  background: var(--color-brand-deep);
-  transform: scaleX(0);
-  transform-origin: right;
-  animation: band-in 0.6s 0.3s var(--ease-out) forwards;
-}
-
-@keyframes band-in {
-  to {
-    transform: scaleX(1);
-  }
 }
 
 /* --- スライドショー（重ねた画像の不透明度を切り替える） --- */
@@ -219,7 +204,6 @@ onBeforeUnmount(() => clearInterval(timer))
     transform: none;
   }
 
-  .hero::after,
   .scroll::after {
     animation: none;
     transform: none;

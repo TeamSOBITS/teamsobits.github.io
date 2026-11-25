@@ -6,7 +6,7 @@
 :root {
   /* --- 色 --- */
   --color-brand: #0d47a1; /* ロゴの青 */
-  --color-brand-deep: #04217f; /* 濃い青（帯・背景） */
+  --color-brand-deep: #04217f; /* 濃い青（見出しの文字） */
   --color-accent: #0078ff; /* 強調・リンク */
   --color-ink: #1a1a1f; /* 本文 */
   --color-ink-muted: #5c6370; /* 補足テキスト */

@@ -11,7 +11,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <HomeHero />
+    <HomeSlideshow />
     <HomeInfo />
     <HomeGreeting />
     <HomeNews />
