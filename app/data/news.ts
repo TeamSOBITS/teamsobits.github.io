@@ -1,8 +1,7 @@
 /**
  * ニュース一覧（仮置き）
  *
- * TODO: データ形式（YAML / Nuxt Content など）が決まったら置き換える。
- *       arkive/.claude/open-questions.md 参照
+ * TODO: データ形式（YAML / Nuxt Content など）を検討中。決まったら置き換える。
  */
 export interface NewsItem {
   /** 公開日 YYYY-MM-DD（記事ページの URL にも使う） */
