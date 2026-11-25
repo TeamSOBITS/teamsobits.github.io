@@ -15,6 +15,9 @@ onMounted(() => window.addEventListener('keydown', onKeydown))
 onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 
 // ページを移動したらメニューを閉じる
+// （リンクを押したときは SiteNav の navigate でも閉じる。両方あるのは、それぞれ片方では拾えない場面があるため:
+//   - 今いるページのリンクを押したとき → URL が変わらないので、この watch では閉じない
+//   - ブラウザの「戻る」を押したとき → リンクを押していないので、navigate では閉じない）
 watch(
   () => route.fullPath,
   () => (menuOpen.value = false),

@@ -19,7 +19,10 @@ export interface NavItem {
   children?: NavItem[]
 }
 
-/** グローバルナビゲーション（ヘッダーとフッターのサイトマップで共用） */
+/**
+ * メニューの項目（ヘッダーのメニューと、フッターのサイトマップの両方で使う）
+ * ここに1行足すと、両方に項目が増える
+ */
 export const NAVIGATION: NavItem[] = [
   { label: 'Top', to: '/' },
   { label: 'About', to: '/about' },

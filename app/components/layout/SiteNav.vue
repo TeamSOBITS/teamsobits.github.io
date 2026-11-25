@@ -1,11 +1,12 @@
 <script setup lang="ts">
 /**
- * グローバルナビゲーション
- * 項目は data/site.ts の NAVIGATION で管理する。
+ * ヘッダーのメニュー（About、Research などのリンクの並び）
  * PC 幅では横並び＋ドロップダウン、スマホ幅では縦並びになる。
  */
+
 import { NAVIGATION } from '~/data/site'
 
+// リンクが押されたことを親（SiteHeader）に知らせる。スマホのメニューを閉じるのに使う
 defineEmits<{ navigate: [] }>()
 </script>
 
