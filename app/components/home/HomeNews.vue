@@ -15,7 +15,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.')
 <template>
   <section class="news">
     <div class="container">
-      <ShuffleText tag="h2" class="heading" :text="$t('home.news.heading')" />
+      <h2 class="heading">{{ $t('home.news.heading') }}</h2>
       <ul class="list">
         <li v-for="item in latest" :key="item.date">
           <NuxtLinkLocale :to="`/news/${item.date}`" class="item">

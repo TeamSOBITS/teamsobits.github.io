@@ -43,4 +43,10 @@ const switchLocalePath = useSwitchLocalePath()
 .language-switcher a[aria-current='true'] {
   opacity: 1;
 }
+
+/* 薄さの違いだけでは今の言語がわかりにくいので、下線も付ける */
+.language-switcher a[aria-current='true'] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 </style>
