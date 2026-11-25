@@ -45,10 +45,15 @@ import { CONTACT_EMAIL, NAVIGATION } from '~/data/site'
   gap: var(--space-5);
 }
 
+/* リンクの範囲をロゴの大きさに合わせる（指定しないと横幅いっぱいがクリックできてしまう） */
+.logo {
+  display: inline-block;
+  margin-bottom: var(--space-4);
+}
+
 .logo img {
   height: 60px;
   width: auto;
-  margin-bottom: var(--space-4);
 }
 
 address {
