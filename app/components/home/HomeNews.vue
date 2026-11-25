@@ -2,7 +2,7 @@
 /** トップの「NEWS」: 新しい順に3件表示する */
 import { NEWS } from '~/data/news'
 
-const { locale } = useI18n()
+const localize = useLocalized()
 
 const latest = computed(() =>
   [...NEWS].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3),
@@ -21,7 +21,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.')
           <li v-for="item in latest" :key="item.date">
             <NuxtLinkLocale :to="`/news/${item.date}`" class="item">
               <time :datetime="item.date">{{ formatDate(item.date) }}</time>
-              <span>{{ locale === 'ja' ? item.title.ja : item.title.en }}</span>
+              <span>{{ localize(item.title) }}</span>
             </NuxtLinkLocale>
           </li>
         </ul>
@@ -41,18 +41,18 @@ const formatDate = (date: string) => date.replaceAll('-', '.')
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   letter-spacing: 0.08em;
-  color: var(--color-brand-deep);
+  color: var(--color-heading);
 }
 
 .list {
-  border-top: 1px solid #dde1e8;
+  border-top: 1px solid var(--color-border);
 }
 
 .item {
   display: grid;
   gap: var(--space-1);
   padding: var(--space-4) var(--space-2);
-  border-bottom: 1px solid #dde1e8;
+  border-bottom: 1px solid var(--color-border);
   transition: background-color 0.2s;
 }
 

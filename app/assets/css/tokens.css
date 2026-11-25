@@ -4,16 +4,16 @@
  * 値を変えたいときはここだけを直せばよい。
  */
 :root {
-  /* --- 色 --- */
+  /* --- 色（サイト全体が暗い色のダークテーマ） --- */
   --color-brand: #0d47a1; /* ロゴの青 */
-  --color-brand-deep: #04217f; /* 濃い青（見出しの文字） */
   --color-accent: #0078ff; /* 強調・リンク */
-  --color-ink: #1a1a1f; /* 本文 */
-  --color-ink-muted: #5c6370; /* 補足テキスト */
-  --color-surface: #ffffff;
-  --color-surface-alt: #f3f5f9;
-  --color-dark: #0b0e1a; /* 代表挨拶などの黒背景 */
-  --color-on-dark: #f0f2f7;
+  --color-heading: #8fb8ff; /* 見出しの文字 */
+  --color-ink: #e6e8ee; /* 本文 */
+  --color-ink-muted: #98a0b0; /* 補足テキスト */
+  --color-surface: #10131c; /* ページ本体の背景 */
+  --color-surface-alt: #181c28; /* 少し明るい背景（カード、交互のセクションなど） */
+  --color-surface-deep: #07080c; /* 一番深い背景（スライドショー、代表挨拶、ページの大見出しなど） */
+  --color-border: rgb(255 255 255 / 0.12); /* 区切り線 */
   --color-header: #0b1340; /* ヘッダー・フッター */
   --color-backdrop: #000000; /* サイトの最背面（引っ張りスクロールで見える部分） */
 

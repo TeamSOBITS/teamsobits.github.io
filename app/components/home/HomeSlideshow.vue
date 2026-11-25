@@ -69,8 +69,7 @@ onBeforeUnmount(() => clearInterval(timer))
   height: calc(100svh - var(--header-height));
   min-height: 520px;
   overflow: hidden;
-  color: var(--color-on-dark);
-  background: var(--color-dark);
+  background: var(--color-surface-deep);
 }
 
 /* --- スライドショー（重ねた画像の不透明度を切り替える） --- */

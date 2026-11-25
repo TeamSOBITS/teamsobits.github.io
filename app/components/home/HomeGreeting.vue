@@ -39,8 +39,7 @@ const subheading = computed(() => t('home.greeting.subheading'))
 <style scoped>
 .greeting {
   padding-block: var(--space-7);
-  color: var(--color-on-dark);
-  background: var(--color-dark);
+  background: var(--color-surface-deep);
 }
 
 .grid {

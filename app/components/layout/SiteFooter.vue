@@ -36,7 +36,6 @@ import { CONTACT_EMAIL, NAVIGATION } from '~/data/site'
 <style scoped>
 .site-footer {
   padding-block: var(--space-6);
-  color: var(--color-on-dark);
   background: var(--color-header);
   font-size: var(--text-sm);
 }

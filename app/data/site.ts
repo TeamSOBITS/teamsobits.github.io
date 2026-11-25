@@ -11,6 +11,9 @@ export const FOUNDED_YEAR = 2000
 
 export const CONTACT_EMAIL = 'team.sobits@gmail.com'
 
+/** GitHub の組織名（https://github.com/TeamSOBITS） */
+export const GITHUB_ORG = 'TeamSOBITS'
+
 export interface NavItem {
   /** 表示名（ナビは日英とも英語表記） */
   label: string
@@ -52,5 +55,5 @@ export const SNS_LINKS: SnsLink[] = [
   { name: 'X (Twitter)', url: 'https://twitter.com/sobits_soka', icon: siX },
   { name: 'Instagram', url: 'https://www.instagram.com/sobits_soka', icon: siInstagram },
   { name: 'YouTube', url: 'https://www.youtube.com/@teamsobits9311', icon: siYoutube },
-  { name: 'GitHub', url: 'https://github.com/TeamSOBITS', icon: siGithub },
+  { name: 'GitHub', url: `https://github.com/${GITHUB_ORG}`, icon: siGithub },
 ]

@@ -25,7 +25,7 @@ h1 {
   margin-bottom: var(--space-3);
   font-family: var(--font-display);
   font-size: var(--text-2xl);
-  color: var(--color-brand-deep);
+  color: var(--color-heading);
 }
 
 .back {

@@ -60,7 +60,7 @@ defineEmits<{ navigate: [] }>()
 
 .sub-list {
   padding: var(--space-2) 0 0 var(--space-3);
-  border-left: 1px solid rgb(255 255 255 / 0.2);
+  border-left: 1px solid var(--color-border);
   margin-top: var(--space-2);
 }
 

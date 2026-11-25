@@ -36,5 +36,15 @@
     "news": {
       "heading": "NEWS"
     }
+  },
+  "research": {
+    "title": "Research Contents",
+    "oss": {
+      "heading": "Open Source Software"
+    },
+    "areas": {
+      "heading": "Research Areas",
+      "intro": "Our laboratory conducts research aimed at realizing a more agreeable society in the following three main research areas."
+    }
   }
 }

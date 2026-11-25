@@ -56,7 +56,6 @@ watch(
   inset: 0 0 auto;
   z-index: 100;
   height: var(--header-height);
-  color: var(--color-on-dark);
   background: var(--color-header);
 }
 

@@ -3,10 +3,12 @@
  *
  * TODO: データ形式（YAML / Nuxt Content など）を検討中。決まったら置き換える。
  */
+import type { Localized } from '~/composables/useLocalized'
+
 export interface NewsItem {
   /** 公開日 YYYY-MM-DD（記事ページの URL にも使う） */
   date: string
-  title: { ja: string; en: string }
+  title: Localized
 }
 
 export const NEWS: NewsItem[] = [

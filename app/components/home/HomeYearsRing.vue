@@ -103,7 +103,7 @@ const inView = useInView(el)
   padding: var(--space-1) var(--space-4);
   font-size: var(--text-lg);
   letter-spacing: 0.3em;
-  color: var(--color-ink);
+  color: var(--color-surface-deep);
   background: #fff;
   text-shadow: none;
 }

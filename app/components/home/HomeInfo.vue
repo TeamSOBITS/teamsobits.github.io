@@ -43,7 +43,7 @@ const years = useYearsActive()
   font-size: var(--text-2xl);
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: var(--color-brand-deep);
+  color: var(--color-heading);
 }
 
 .text {
