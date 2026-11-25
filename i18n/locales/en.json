@@ -38,7 +38,7 @@
     }
   },
   "research": {
-    "title": "Research Contents",
+    "title": "Research",
     "oss": {
       "heading": "Open Source Software"
     },
@@ -46,5 +46,8 @@
       "heading": "Research Areas",
       "intro": "Our laboratory conducts research aimed at realizing a more agreeable society in the following three main research areas."
     }
+  },
+  "robots": {
+    "title": "Robots"
   }
 }

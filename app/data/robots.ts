@@ -1,0 +1,108 @@
+/**
+ * ロボット紹介ページのデータ（仮置き）
+ *
+ * 新しいロボットから順に並べる（ページにもこの順で表示される）。
+ * ロボットを追加するときは、配列の先頭に1項目足し、画像を public/images/robots/ に置く。
+ * 段落は空行（\n\n）で区切る。ここでは読みやすさのため、段落ごとの配列を join('\n\n') でつないでいる。
+ *
+ * TODO: データ形式（YAML / Nuxt Content など）を検討中。決まったら置き換える。
+ */
+import type { Localized } from '~/composables/useLocalized'
+
+export interface Robot {
+  /** ページ内リンクに使う id（例: /robots#sobit-home） */
+  id: string
+  /** ロボットの名前（日英共通） */
+  name: string
+  /** 画像のパス（public/ から） */
+  image: string
+  /** 紹介文。段落は \n\n で区切る */
+  description: Localized
+  /** 機能紹介（GitHub のリポジトリ） */
+  repositoryUrl: string
+}
+
+export const ROBOTS: Robot[] = [
+  {
+    id: 'sobit-home',
+    name: 'SOBIT HOME',
+    image: '/images/robots/sobit-home.png',
+    description: {
+      ja: [
+        'SOBIT HOMEは、汎用サービスロボット（E-GPSR）の課題に対応するために開発された、双腕型の移動マニピュレータです。',
+        'ハードウェアの主要な特徴として、屋内の狭い空間でも高い機動性を発揮できる4輪独立操舵（スワーブドライブ）ベースを採用しており、全方向移動が可能です。操作系では、双腕の7自由度マニピュレータを備え、安定した器用な操作を可能にします。胴体部には可変高リニアアクチュエーターが搭載され、床（0m）から高い棚（2m）までの高さに対応しています。また、エンドエフェクタは、箱のような物体を把持する2本指構成と、球状の物体を包み込む3本指構成に切り替え可能です。人間との自然な対話（HRI）を促進するため、丸みを帯びたデザインと8インチのタッチディスプレイを顔部に採用しています。',
+        'SOBIT HOMEの完全なハードウェアモデルとROSベースのソフトウェアライブラリは、ロボット研究への参入障壁を下げるため、オープンソースとして公開しています。',
+      ].join('\n\n'),
+      en: [
+        'SOBIT HOME is a dual-arm mobile manipulator developed to address the challenges of electronic general-purpose service robots (E-GPSR).',
+        'A key hardware feature is its four-wheel independent steering (Swerve Drive) base, which enables high maneuverability even in tight indoor spaces, enabling omnidirectional movement. Its control system features a dual-arm, 7-DOF manipulator for stable and dexterous operation. The torso is equipped with a variable-height linear actuator, allowing it to adjust to heights ranging from the floor (0 m) to a high shelf (2 m). The end effector can switch between a two-finger configuration for grasping box-like objects and a three-finger configuration for enveloping spherical objects. To promote natural human interaction (HRI), the robot features a rounded design and an 8-inch touch display on the face.',
+        "SOBIT HOME's complete hardware model and ROS-based software library are released as open source to lower the barrier to entry into robotics research.",
+      ].join('\n\n'),
+    },
+    repositoryUrl: 'https://github.com/TeamSOBITS/sobit_home',
+  },
+  {
+    id: 'sobit-light',
+    name: 'SOBIT LIGHT',
+    image: '/images/robots/sobit-light.png',
+    description: {
+      ja: [
+        'SOBIT LIGHTは、日常生活におけるタスク解決を目的としてチームSOBITSが新たに開発したオープンソースのAI搭載型自律移動マニピュレーターです。このロボットの主な目標は、正確な移動、物体操作と認識、そして人間とロボットの対話のための自然言語処理を達成することです。',
+        'SOBIT LIGHTはPreferred Robotics社が開発したKachakaをベースとした移動台座を備え、動的な障害物や狭い通路での衝突を回避しながら自律的にナビゲーションを行います。また、7自由度のマニピュレータ(OpenManipulator X1000ベース)を搭載し、より複雑な物体操作を可能としています。',
+      ].join('\n\n'),
+      en: [
+        "SOBIT LIGHT is a new open-source, AI-powered autonomous mobile manipulator developed by Team SOBITS to solve everyday tasks. The robot's primary goals are precise movement, object manipulation and recognition, and natural language processing for human-robot interaction.",
+        'SOBIT LIGHT features a mobile base based on Kachaka, developed by Preferred Robotics, enabling autonomous navigation while avoiding collisions with dynamic obstacles and narrow passages. It also features a 7-degree-of-freedom manipulator (based on OpenManipulator X1000) for more complex object manipulation.',
+      ].join('\n\n'),
+    },
+    repositoryUrl: 'https://github.com/TeamSOBITS/sobit_light',
+  },
+  {
+    id: 'sobit-pro',
+    name: 'SOBIT PRO',
+    image: '/images/robots/sobit-pro.png',
+    description: {
+      ja: [
+        'AIを搭載した生活支援ロボットの「SOBIT PRO」です。(SOBIT EDUやSOBIT MINIと同様に、)人工知能やロボット工学の研究推進を目的としたロボカップ競技会への参加を主軸に、日常生活でロボットの利用を想定した研究・開発を行っています。SOBIT PROは、SOBIT EDUやSOBIT MINIよりも複雑な作業を行うために開発されました。特に、4輪が独立したステアリング機構による全方向への移動や、50cm程ある長いマニピュレーターを動作させることができる点などが特徴です。',
+        'SOBIT PROは、移動機構から3DCADソフトを用いてロボットの設計を行い、3Dプリンタを駆使して各パーツを作成しています。そして、作成した各パーツに各種センサやアクチュエータ等を組み込み、ロボットを作製しています。',
+      ].join('\n\n'),
+      en: [
+        'SOBIT PRO is an AI-powered life support robot. SOBIT PRO was developed to perform more complex tasks than previous robots, SOBIT EDU and SOBIT MINI. In particular, SOBIT PRO is characterised by its four-wheel independent steering mechanism, which allows it to move in all directions, and its ability to operate a 50 cm long manipulator.',
+        'SOBIT PRO is designed using 3D CAD software from the motion mechanism and each part is produced using a 3D printer. Various sensors and actuators are also incorporated into the parts to developed the robot.',
+      ].join('\n\n'),
+    },
+    repositoryUrl: 'https://github.com/TeamSOBITS/sobit_pro',
+  },
+  {
+    id: 'sobit-mini',
+    name: 'SOBIT MINI',
+    image: '/images/robots/sobit-mini.png',
+    description: {
+      ja: [
+        'AIを搭載した生活支援ロボットの「SOBIT MINI」です。(SOBIT EDUと同様に、)人工知能やロボット工学の研究推進を目的としたロボカップ競技会への参加を主軸に、日常生活でロボットの利用を想定した研究・開発を行っています。人の暮らしに役立つ作業を行うことはもちろんですが、特にSOBIT MINIは人々に親しまれるような見た目にこだわって開発しました。そのため、ロボットの感情をより豊かに表現することができ、優れたコミュニケーションを取ることができます。',
+        'SOBIT MINIは、Yujin Robot社が開発したTurtleBot2をベースとして、3DCADソフトを用いてロボットの設計を行い、3Dプリンタを駆使して各パーツを造形しています。そして、作成した各パーツに各種センサやアクチュエータ等を組み込み、ロボットを作製しています。',
+      ].join('\n\n'),
+      en: [
+        "SOBIT MINI is an AI-equipped life-support robot. SOBIT MINI has being developed and researched for use in a daily life environment, and tested in RoboCup competitions, which aims to promote research in artificial intelligence and robotics. In addition to performing tasks that are useful in people's daily activities, SOBIT MINI was developed with a particular focus on a look that people can feel relate to. This allows the robot to express its emotions more fully and communicate naturally.",
+        'SOBIT MINI is based on TurtleBot2 developed by Yujin Robot, and upgraded with 3D-printed parts sketched using CAD software such as OnShape or Fusion360. The robot is then equipped with various sensors, actuators, and other components to achieve a wider adaptability to the environement.',
+      ].join('\n\n'),
+    },
+    repositoryUrl: 'https://github.com/TeamSOBITS/sobit_mini',
+  },
+  {
+    id: 'sobit-edu',
+    name: 'SOBIT EDU',
+    image: '/images/robots/sobit-edu.png',
+    description: {
+      ja: [
+        'AIを搭載した生活支援ロボットの「SOBIT EDU」です。人工知能やロボット工学の研究推進を目的としたロボカップ競技会への参加を主軸に、日常生活でロボットの利用を想定した研究・開発を行っています。ロボカップでは、リビングルームやキッチンなどの家庭環境において、いかに人の暮らしに役立つ作業を遂行できるかを競います。そのため、物体を認識し掴むことや人を追従すること、ロボットと人が自然にコミュニケーションを取ることなどを行います。',
+        'SOBIT EDUは、Yujin Robot社が開発したTurtleBot2をベースとして、3DCADソフトを用いてロボットの設計を行い、3Dプリンタを駆使して各パーツを作成しています。そして、作成した各パーツに各種センサやアクチュエータ等を組み込み、ロボットを作製しています。',
+      ].join('\n\n'),
+      en: [
+        "SOBIT EDU is an AI-powered life support robot. The laboratory's research and development is focused on participating in the RoboCup competition, which aims to promote research in artificial intelligence and robotics, as well as the use of robots in everyday life. In the RoboCup competition, robots compete to see how well they can perform tasks that are useful in people's daily lives in domestic environments such as living rooms and kitchens. To achieve this, the robots will recognise and grasp objects, follow people and communicate naturally with people.",
+        'SOBIT EDU is based on the TurtleBot2 developed by Yujin Robot. The robot is designed using 3D CAD software and each part is produced using a 3D printer. The robot is then fabricated by incorporating various sensors, actuators, and other components into each of the created parts.',
+      ].join('\n\n'),
+    },
+    repositoryUrl: 'https://github.com/TeamSOBITS/sobit_edu',
+  },
+]
