@@ -10,32 +10,28 @@ const subheading = computed(() => t('home.greeting.subheading'))
 <template>
   <section class="greeting">
     <div class="container grid">
-      <div v-reveal class="side">
-        <div>
-          <h2 class="heading">
-            <span class="initial">{{ t('home.greeting.heading').charAt(0) }}</span
-            >{{ t('home.greeting.heading').slice(1) }}
-            <span v-if="subheading" class="subheading">{{ subheading }}</span>
-          </h2>
-          <NuxtImg
-            src="/images/home/greeting.jpg"
-            :alt="t('home.greeting.photoAlt')"
-            class="photo"
-            width="758"
-            height="470"
-            sizes="xs:100vw sm:100vw md:100vw lg:45vw xl:45vw"
-            format="webp"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <RevealBlock class="side">
+        <h2 class="heading">
+          <span class="initial">{{ t('home.greeting.heading').charAt(0) }}</span
+          >{{ t('home.greeting.heading').slice(1) }}
+          <span v-if="subheading" class="subheading">{{ subheading }}</span>
+        </h2>
+        <NuxtImg
+          src="/images/home/greeting.jpg"
+          :alt="t('home.greeting.photoAlt')"
+          class="photo"
+          width="758"
+          height="470"
+          sizes="xs:100vw sm:100vw md:100vw lg:45vw xl:45vw"
+          format="webp"
+          loading="lazy"
+        />
+      </RevealBlock>
 
-      <div v-reveal class="message">
-        <div>
-          <p v-for="(p, i) in paragraphs" :key="i">{{ p }}</p>
-          <p class="signature">{{ t('home.greeting.signature') }}</p>
-        </div>
-      </div>
+      <RevealBlock class="message">
+        <p v-for="(p, i) in paragraphs" :key="i">{{ p }}</p>
+        <p class="signature">{{ t('home.greeting.signature') }}</p>
+      </RevealBlock>
     </div>
   </section>
 </template>

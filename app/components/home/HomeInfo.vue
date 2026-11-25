@@ -13,13 +13,11 @@ const years = useYearsActive()
           <span>SOBITS</span>
           <span>INFORMATION</span>
         </h2>
-        <div v-reveal class="text-block">
-          <div>
-            <!-- 翻訳ファイル中の改行（\n）をそのまま改行として表示する -->
-            <p class="text">{{ $t('home.info.text', { years }) }}</p>
-            <LinkButton to="/about" class="more" />
-          </div>
-        </div>
+        <RevealBlock class="text-block">
+          <!-- 翻訳ファイル中の改行（\n）をそのまま改行として表示する -->
+          <p class="text">{{ $t('home.info.text', { years }) }}</p>
+          <LinkButton to="/about" class="more" />
+        </RevealBlock>
       </div>
     </div>
   </section>
