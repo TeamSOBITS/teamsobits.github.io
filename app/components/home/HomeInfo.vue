@@ -13,11 +13,9 @@ const years = useYearsActive()
           <span>SOBITS</span>
           <span>INFORMATION</span>
         </h2>
-        <RevealBlock class="text-block">
-          <!-- 翻訳ファイル中の改行（\n）をそのまま改行として表示する -->
-          <p class="text">{{ $t('home.info.text', { years }) }}</p>
-          <LinkButton to="/about" class="more" />
-        </RevealBlock>
+        <!-- 翻訳ファイル中の改行（\n）をそのまま改行として表示する -->
+        <p class="text">{{ $t('home.info.text', { years }) }}</p>
+        <LinkButton to="/about" class="more" />
       </div>
     </div>
   </section>

@@ -16,17 +16,15 @@ const formatDate = (date: string) => date.replaceAll('-', '.')
   <section class="news">
     <div class="container">
       <ShuffleText tag="h2" class="heading" :text="$t('home.news.heading')" />
-      <RevealBlock>
-        <ul class="list">
-          <li v-for="item in latest" :key="item.date">
-            <NuxtLinkLocale :to="`/news/${item.date}`" class="item">
-              <time :datetime="item.date">{{ formatDate(item.date) }}</time>
-              <span>{{ localize(item.title) }}</span>
-            </NuxtLinkLocale>
-          </li>
-        </ul>
-        <LinkButton to="/news" class="more" />
-      </RevealBlock>
+      <ul class="list">
+        <li v-for="item in latest" :key="item.date">
+          <NuxtLinkLocale :to="`/news/${item.date}`" class="item">
+            <time :datetime="item.date">{{ formatDate(item.date) }}</time>
+            <span>{{ localize(item.title) }}</span>
+          </NuxtLinkLocale>
+        </li>
+      </ul>
+      <LinkButton to="/news" class="more" />
     </div>
   </section>
 </template>

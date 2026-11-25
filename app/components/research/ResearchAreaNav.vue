@@ -8,14 +8,12 @@ const localize = useLocalized()
 <template>
   <section class="area-nav container">
     <h2 class="section-heading">{{ $t('research.areas.heading') }}</h2>
-    <RevealBlock>
-      <p>{{ $t('research.areas.intro') }}</p>
-      <ul class="links">
-        <li v-for="area in RESEARCH_AREAS" :key="area.id">
-          <a :href="`#${area.id}`">{{ localize(area.title) }}</a>
-        </li>
-      </ul>
-    </RevealBlock>
+    <p>{{ $t('research.areas.intro') }}</p>
+    <ul class="links">
+      <li v-for="area in RESEARCH_AREAS" :key="area.id">
+        <a :href="`#${area.id}`">{{ localize(area.title) }}</a>
+      </li>
+    </ul>
   </section>
 </template>
 

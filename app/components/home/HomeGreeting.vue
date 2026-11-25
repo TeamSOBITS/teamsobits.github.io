@@ -10,7 +10,7 @@ const subheading = computed(() => t('home.greeting.subheading'))
 <template>
   <section class="greeting">
     <div class="container grid">
-      <RevealBlock class="side">
+      <div class="side">
         <h2 class="heading">
           <span class="initial">{{ t('home.greeting.heading').charAt(0) }}</span
           >{{ t('home.greeting.heading').slice(1) }}
@@ -26,12 +26,12 @@ const subheading = computed(() => t('home.greeting.subheading'))
           format="webp"
           loading="lazy"
         />
-      </RevealBlock>
+      </div>
 
-      <RevealBlock class="message">
+      <div class="message">
         <p v-for="(p, i) in paragraphs" :key="i">{{ p }}</p>
         <p class="signature">{{ t('home.greeting.signature') }}</p>
-      </RevealBlock>
+      </div>
     </div>
   </section>
 </template>

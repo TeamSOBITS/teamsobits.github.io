@@ -17,28 +17,26 @@ const paragraphs = (text: string) => text.split('\n\n')
   <section :id="area.id" class="area container">
     <h2 class="section-heading">{{ localize(area.title) }}</h2>
 
-    <RevealBlock class="summary">
+    <div class="summary">
       <p v-for="(p, i) in paragraphs(localize(area.summary))" :key="i">{{ p }}</p>
-    </RevealBlock>
+    </div>
 
     <ul class="themes">
-      <li v-for="theme in area.themes" :key="theme.image">
-        <RevealBlock class="theme">
-          <h3 class="theme-title">{{ localize(theme.title) }}</h3>
-          <div class="theme-body">
-            <NuxtImg
-              :src="theme.image"
-              alt=""
-              class="theme-image"
-              sizes="xs:100vw sm:100vw md:100vw lg:400px xl:400px"
-              format="webp"
-              loading="lazy"
-            />
-            <div class="theme-abstract">
-              <p v-for="(p, i) in paragraphs(localize(theme.abstract))" :key="i">{{ p }}</p>
-            </div>
+      <li v-for="theme in area.themes" :key="theme.image" class="theme">
+        <h3 class="theme-title">{{ localize(theme.title) }}</h3>
+        <div class="theme-body">
+          <NuxtImg
+            :src="theme.image"
+            alt=""
+            class="theme-image"
+            sizes="xs:100vw sm:100vw md:100vw lg:400px xl:400px"
+            format="webp"
+            loading="lazy"
+          />
+          <div class="theme-abstract">
+            <p v-for="(p, i) in paragraphs(localize(theme.abstract))" :key="i">{{ p }}</p>
           </div>
-        </RevealBlock>
+        </div>
       </li>
     </ul>
   </section>
