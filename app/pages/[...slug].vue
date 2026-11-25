@@ -11,7 +11,7 @@ useSeoMeta({ title: () => t('common.comingSoon.title'), robots: 'noindex' })
   <section class="coming-soon container">
     <h1>{{ t('common.comingSoon.title') }}</h1>
     <p>{{ t('common.comingSoon.body') }}</p>
-    <MoreButton to="/" :label="t('common.comingSoon.back')" class="back" />
+    <LinkButton to="/" :label="t('common.comingSoon.back')" class="back" />
   </section>
 </template>
 

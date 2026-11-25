@@ -17,7 +17,7 @@ const years = useYearsActive()
           <div>
             <!-- 翻訳ファイル中の改行（\n）をそのまま改行として表示する -->
             <p class="text">{{ $t('home.info.text', { years }) }}</p>
-            <MoreButton to="/about" class="more" />
+            <LinkButton to="/about" class="more" />
           </div>
         </div>
       </div>

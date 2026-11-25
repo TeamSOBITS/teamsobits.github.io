@@ -26,7 +26,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.')
               </NuxtLinkLocale>
             </li>
           </ul>
-          <MoreButton to="/news" class="more" />
+          <LinkButton to="/news" class="more" />
         </div>
       </div>
     </div>
