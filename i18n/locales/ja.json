@@ -1,0 +1,40 @@
+{
+  "site": {
+    "name": "TeamSOBITS",
+    "description": "創価大学 TeamSOBITS は、2000年の創設以来、生活支援ロボットに関わる研究開発を行うチームです。",
+    "address": "〒192-8577 東京都八王子市丹木町192-0003 創価大学F棟 崔研究室、萩原研究室"
+  },
+  "common": {
+    "more": "More",
+    "followUs": "Follow us",
+    "scroll": "Scroll",
+    "menu": "メニュー",
+    "language": "言語",
+    "comingSoon": {
+      "title": "準備中",
+      "body": "このページは現在リニューアル作業中です。",
+      "back": "トップへ戻る"
+    }
+  },
+  "home": {
+    "hero": {
+      "catch": "We are SOBITS."
+    },
+    "info": {
+      "heading": "SOBITS INFORMATION",
+      "text": "SOBITSは2000年、崔龍雲教授と\n崔研究室に所属していた数名の学生たちによって\n最初の一歩を踏み出しました。\n以降{years}年以上にわたり、生活支援ロボットに関わる研究開発を通じて\n価値を創造しています。",
+      "since": "SINCE {year}",
+      "yearsUnit": "YEARS"
+    },
+    "greeting": {
+      "heading": "Greetings",
+      "subheading": "代表挨拶",
+      "body": "No matter how great man’s technological progress may be, there is nothing as essential for the development of business as harmony among men.\n\n-- いかなる技術的な発展があったとしても、人間の和ほど事業の発展に大切なものはない。\n\n机に向かって勉強を熱心にこなし、テストで高得点を取る人が成果を出すとは限りません。目的を自ら明確にし、目標に向かって試行錯誤し、時には協力し合うような人材がより良い研究をしてきました。せっかく大学に来るのなら、”太平洋で泳ぐ”ような感覚でなんでもやってみることが飛躍の礎になるでしょう。",
+      "signature": "教授　崔 龍雲",
+      "photoAlt": "崔 龍雲 教授"
+    },
+    "news": {
+      "heading": "NEWS"
+    }
+  }
+}

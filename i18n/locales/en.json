@@ -1,0 +1,40 @@
+{
+  "site": {
+    "name": "TeamSOBITS",
+    "description": "TeamSOBITS at Soka University has been researching and developing life support robots since 2000.",
+    "address": "192-8577 Choi Laboratory and Hagiwara Laboratory, F Building, Soka University, 192-0003 Tangi-cho, Hachioji-shi, Tokyo, Japan, Japan"
+  },
+  "common": {
+    "more": "More",
+    "followUs": "Follow us",
+    "scroll": "Scroll",
+    "menu": "Menu",
+    "language": "Language",
+    "comingSoon": {
+      "title": "Coming soon",
+      "body": "This page is currently being renewed.",
+      "back": "Back to top"
+    }
+  },
+  "home": {
+    "hero": {
+      "catch": "We are SOBITS."
+    },
+    "info": {
+      "heading": "SOBITS INFORMATION",
+      "text": "SOBITS was founded in 2000 by Professor Choi Yongwoon\nsome students in his lab taking the first step.\nSince then, and for more than {years} years, SOBITS has been creating value\nthrough research and development in the field of life support robots.",
+      "since": "SINCE {year}",
+      "yearsUnit": "YEARS"
+    },
+    "greeting": {
+      "heading": "Greetings",
+      "subheading": "",
+      "body": "“No matter how great man's technological progress may be, there is nothing as essential for the development of business as harmony among men.”\n\nIt is not always those who study diligently at their desks and get high scores on tests who produce results. People who have clear objectives, work toward those objectives through trial and error, and sometimes cooperate with each other have been able to conduct better research.\n\nIf you are going to come to university, you should try everything as if you were \"swimming in the Pacific Ocean,\" as this will be the foundation for a great leap forward.",
+      "signature": "Professor Choi Yongwoon",
+      "photoAlt": "Professor Choi Yongwoon"
+    },
+    "news": {
+      "heading": "NEWS"
+    }
+  }
+}

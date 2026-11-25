@@ -1,0 +1,136 @@
+/* ベーススタイル: 全ページ共通のリセットと基本の文字組み */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+ * サイトの最背面の色
+ * 画面の端を越えてスクロールしたとき（ヘッダーの上・フッターの下）に見える部分。
+ * ヘッダーと同じ色だとヘッダーが伸びたように見えるので、黒にしている。
+ * ページ本体の白は layouts/default.vue の main で塗る
+ */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background: var(--color-backdrop);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  color: var(--color-ink);
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ページ内リンクで移動したとき、固定ヘッダーの下に隠れないようにする */
+[id] {
+  scroll-margin-top: var(--header-height);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* 画面中央に寄せる共通の入れ物 */
+.container {
+  width: min(100% - 2 * var(--space-4), var(--content-width));
+  margin-inline: auto;
+}
+
+/* スクリーンリーダー向けにだけ読ませるテキスト */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/*
+ * v-reveal: スクロールで画面に入ったとき、色の帯が横切ってから中身が現れる演出
+ * （app/plugins/reveal.ts と対になる）
+ */
+[data-reveal] {
+  position: relative;
+}
+
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  [data-reveal] > * {
+    opacity: 0;
+  }
+
+  [data-reveal]::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    pointer-events: none;
+  }
+
+  [data-reveal].is-revealed > * {
+    animation: reveal-content 0.01s 0.45s forwards;
+  }
+
+  [data-reveal].is-revealed::after {
+    animation: reveal-sweep 0.9s var(--ease-out) forwards;
+  }
+}
+
+@keyframes reveal-sweep {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50.1% {
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+
+@keyframes reveal-content {
+  to {
+    opacity: 1;
+  }
+}
