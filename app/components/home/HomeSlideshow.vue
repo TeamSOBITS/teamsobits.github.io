@@ -5,7 +5,7 @@
  */
 
 /**
- * スライド画像の一覧（public/ からのパス）。上から順に表示する
+ * スライドの写真の一覧（public/ からのパス）。ロゴのスライドの後に、上から順に表示する
  * 写真を変えるときは、public/images/home/slideshow/ の画像とこの一覧の両方を直す
  */
 const SLIDES = [
@@ -15,8 +15,10 @@ const SLIDES = [
   '/images/home/slideshow/04.jpg',
   '/images/home/slideshow/05.jpg',
   '/images/home/slideshow/06.jpg',
-  '/images/home/slideshow/07.jpg',
 ]
+
+/** スライドの枚数（先頭のロゴのスライドを含む） */
+const SLIDE_COUNT = SLIDES.length + 1
 
 /** 1枚あたりの表示時間（ミリ秒） */
 const INTERVAL = 6000
@@ -25,10 +27,10 @@ const current = ref(0)
 let timer: ReturnType<typeof setInterval> | undefined
 
 onMounted(() => {
-  // 画像が1枚以下なら切り替えない
-  if (SLIDES.length < 2) return
+  // スライドが1枚以下なら切り替えない
+  if (SLIDE_COUNT < 2) return
   timer = setInterval(() => {
-    current.value = (current.value + 1) % SLIDES.length
+    current.value = (current.value + 1) % SLIDE_COUNT
   }, INTERVAL)
 })
 onBeforeUnmount(() => clearInterval(timer))
@@ -37,17 +39,23 @@ onBeforeUnmount(() => clearInterval(timer))
 <template>
   <section class="top-section">
     <div class="slideshow" aria-hidden="true">
+      <!--
+        1枚目はロゴ。写真と違い、端が切れると困るので、画像の写真にせず SVG のロゴを青い背景の中央に置いている
+        （写真は画面の形に合わせて端を切り落として表示するため、縦長のスマホでは左右が切れる）
+      -->
+      <div class="slide logo-slide" :class="{ 'is-active': current === 0 }">
+        <img src="/images/brand/logo-white.svg" alt="" class="logo" />
+      </div>
       <NuxtImg
         v-for="(src, i) in SLIDES"
         :key="src"
         :src="src"
         alt=""
         class="slide"
-        :class="{ 'is-active': i === current }"
+        :class="{ 'is-active': i + 1 === current }"
         sizes="xs:100vw sm:100vw md:100vw lg:85vw xl:85vw xxl:85vw"
         format="webp"
         :loading="i === 0 ? 'eager' : 'lazy'"
-        :fetchpriority="i === 0 ? 'high' : 'auto'"
       />
     </div>
 
@@ -76,6 +84,8 @@ onBeforeUnmount(() => clearInterval(timer))
 .slideshow {
   position: absolute;
   inset: 0;
+  /* 拡大していく画像が枠（とその上の暗いグラデーション）からはみ出さないよう、枠で切り取る */
+  overflow: hidden;
 }
 
 .slide {
@@ -93,6 +103,17 @@ onBeforeUnmount(() => clearInterval(timer))
 .slide.is-active {
   opacity: 1;
   transform: scale(1.06);
+}
+
+.logo-slide {
+  display: grid;
+  place-items: center;
+  background: var(--color-brand);
+}
+
+.logo {
+  width: min(60%, 480px);
+  height: auto;
 }
 
 /* 文字を読みやすくするため、画像の上に暗いグラデーションを重ねる */
