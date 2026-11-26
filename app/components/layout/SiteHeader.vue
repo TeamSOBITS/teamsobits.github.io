@@ -28,7 +28,7 @@ watch(
   <header class="site-header" :class="{ 'is-open': menuOpen }">
     <div class="inner">
       <NuxtLinkLocale to="/" class="logo">
-        <img src="/images/brand/logo-white.svg" alt="TeamSOBITS" width="72" height="45" />
+        <img src="~/assets/images/logo-white.svg" alt="TeamSOBITS" width="72" height="45" />
       </NuxtLinkLocale>
 
       <button

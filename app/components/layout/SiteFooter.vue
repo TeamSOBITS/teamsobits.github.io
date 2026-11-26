@@ -8,7 +8,7 @@ import { CONTACT_EMAIL, NAVIGATION } from '~/data/site'
     <div class="container inner">
       <section class="info">
         <NuxtLinkLocale to="/" class="logo">
-          <img src="/images/brand/logo-white.svg" alt="TeamSOBITS" width="96" height="60" />
+          <img src="~/assets/images/logo-white.svg" alt="TeamSOBITS" width="96" height="60" />
         </NuxtLinkLocale>
         <address>{{ $t('site.address') }}</address>
         <dl class="contact">

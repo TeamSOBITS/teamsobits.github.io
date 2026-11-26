@@ -31,7 +31,7 @@ const [latestVideo, ...archivedVideos] = QUALIFICATION_VIDEOS
     <h3 class="subheading">Team Description Paper</h3>
     <ul class="links">
       <li v-for="paper in TEAM_DESCRIPTION_PAPERS" :key="paper.file">
-        <a :href="paper.file" target="_blank" rel="noopener noreferrer">{{ paper.title }} (PDF)</a>
+        <NuxtLink :to="paper.file" target="_blank">{{ paper.title }} (PDF)</NuxtLink>
       </li>
     </ul>
   </section>

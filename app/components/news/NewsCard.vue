@@ -20,7 +20,7 @@ const localize = useLocalized()
         format="webp"
         loading="lazy"
       />
-      <img v-else src="/images/brand/logo-white.svg" alt="" class="logo" />
+      <img v-else src="~/assets/images/logo-white.svg" alt="" class="logo" />
     </span>
     <time :datetime="item.date" class="date">{{ formatDate(item.date) }}</time>
     <span class="title">{{ localize(item.title) }}</span>

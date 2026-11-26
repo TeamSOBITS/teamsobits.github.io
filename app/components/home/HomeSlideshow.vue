@@ -44,7 +44,7 @@ onBeforeUnmount(() => clearInterval(timer))
         （写真は画面の形に合わせて端を切り落として表示するため、縦長のスマホでは左右が切れる）
       -->
       <div class="slide logo-slide" :class="{ 'is-active': current === 0 }">
-        <img src="/images/brand/logo-white.svg" alt="" class="logo" />
+        <img src="~/assets/images/logo-white.svg" alt="" class="logo" />
       </div>
       <NuxtImg
         v-for="(src, i) in SLIDES"
