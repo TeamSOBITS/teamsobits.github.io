@@ -66,7 +66,7 @@ onBeforeUnmount(() => clearInterval(timer))
       <SnsLinks direction="column" />
     </div>
 
-    <a href="#info" class="scroll">{{ $t('common.scroll') }}</a>
+    <NuxtLink :to="{ hash: '#info' }" class="scroll">{{ $t('common.scroll') }}</NuxtLink>
   </section>
 </template>
 

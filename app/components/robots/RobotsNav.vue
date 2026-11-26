@@ -7,7 +7,7 @@ import { ROBOTS } from '~/data/robots'
   <nav class="robots-nav container" aria-label="Robots">
     <ul class="cards">
       <li v-for="robot in ROBOTS" :key="robot.id">
-        <a :href="`#${robot.id}`" class="card">
+        <NuxtLink :to="{ hash: `#${robot.id}` }" class="card">
           <!-- 拡大した写真がはみ出さないよう、写真を枠で囲んでいる -->
           <span class="frame">
             <NuxtImg
@@ -19,7 +19,7 @@ import { ROBOTS } from '~/data/robots'
             />
           </span>
           <span class="name">{{ robot.name }}</span>
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </nav>

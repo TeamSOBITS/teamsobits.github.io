@@ -13,7 +13,6 @@
  * ページ本体の背景（--color-surface）は layouts/default.vue の main で塗る
  */
 html {
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   background: var(--color-backdrop);
 }
@@ -31,13 +30,15 @@ h2,
 h3,
 p,
 ul,
+ol,
 dl,
 dd,
 figure {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   padding: 0;
   list-style: none;
 }
@@ -63,9 +64,12 @@ a {
   outline-offset: 3px;
 }
 
-/* 画面中央に寄せる共通の入れ物 */
+/*
+ * 画面中央に寄せる共通の入れ物
+ * 左右の余白は、画面幅の 8%（最小 1.5rem、最大 6rem）。狭い余白だと窮屈に見えるため
+ */
 .container {
-  width: min(100% - 2 * var(--space-4), var(--content-width));
+  width: min(100% - 2 * clamp(var(--space-4), 8vw, var(--space-7)), var(--content-width));
   margin-inline: auto;
 }
 

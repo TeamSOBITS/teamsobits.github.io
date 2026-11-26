@@ -11,6 +11,11 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/tokens.css', '~/assets/css/base.css'],
 
+  // ページ内リンク（# への移動）だけ、ぬるっとスクロールさせる。
+  // CSS の scroll-behavior: smooth は別ページへ移るときの「一番上へ戻す」にも効いてしまうので使わない。
+  // ページ内リンクは <a href="#..."> ではなく <NuxtLink :to="{ hash: '#...' }"> で書く（a だとブラウザが先に瞬時に飛ぶため）
+  router: { options: { scrollBehaviorType: 'smooth' } },
+
   app: {
     head: {
       link: [
