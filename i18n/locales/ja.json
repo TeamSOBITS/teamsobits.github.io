@@ -78,5 +78,22 @@
       "domestic": "国内学会発表",
       "journals": "ジャーナル"
     }
+  },
+  "people": {
+    "title": "People",
+    "sections": {
+      "faculty": "教員",
+      "doctoral": "博士課程",
+      "master": "修士課程",
+      "bachelor": "学士課程",
+      "robots": "ロボット"
+    },
+    "labs": {
+      "choi": "崔研究室",
+      "hagiwara": "萩原研究室"
+    },
+    "researchTopic": "研究テーマ",
+    "skills": "スキル",
+    "close": "閉じる"
   }
 }

@@ -78,5 +78,22 @@
       "domestic": "Domestic conferences (Japan)",
       "journals": "Journals"
     }
+  },
+  "people": {
+    "title": "People",
+    "sections": {
+      "faculty": "Faculty",
+      "doctoral": "Ph.D. Students",
+      "master": "Master Students",
+      "bachelor": "Bachelor Students",
+      "robots": "Robots"
+    },
+    "labs": {
+      "choi": "Choi Lab.",
+      "hagiwara": "Hagiwara Lab."
+    },
+    "researchTopic": "Research Topic",
+    "skills": "Skills",
+    "close": "Close"
   }
 }

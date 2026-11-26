@@ -20,6 +20,11 @@ export interface Robot {
   description: Localized
   /** 機能紹介（GitHub のリポジトリ） */
   repositoryUrl: string
+  /**
+   * メンバーページのアイコンに使う画像。リポジトリの README に載っている、背景が透明な CG の URL。
+   * 静的書き出しのときに取ってきて縮小するので、README の画像を差し替えれば次の書き出しで反映される
+   */
+  icon: string
 }
 
 export const ROBOTS: Robot[] = [
@@ -40,6 +45,7 @@ export const ROBOTS: Robot[] = [
       ].join('\n\n'),
     },
     repositoryUrl: 'https://github.com/TeamSOBITS/sobit_home',
+    icon: 'https://raw.githubusercontent.com/TeamSOBITS/sobit_home/HEAD/sobit_home/docs/img/sobit_home.png',
   },
   {
     id: 'sobit-light',
@@ -56,6 +62,7 @@ export const ROBOTS: Robot[] = [
       ].join('\n\n'),
     },
     repositoryUrl: 'https://github.com/TeamSOBITS/sobit_light',
+    icon: 'https://raw.githubusercontent.com/TeamSOBITS/sobit_light/HEAD/sobit_light/docs/img/sobit_light.png',
   },
   {
     id: 'sobit-pro',
@@ -72,6 +79,7 @@ export const ROBOTS: Robot[] = [
       ].join('\n\n'),
     },
     repositoryUrl: 'https://github.com/TeamSOBITS/sobit_pro',
+    icon: 'https://raw.githubusercontent.com/TeamSOBITS/sobit_pro/HEAD/sobit_pro/docs/img/sobit_pro.png',
   },
   {
     id: 'sobit-mini',
@@ -88,6 +96,7 @@ export const ROBOTS: Robot[] = [
       ].join('\n\n'),
     },
     repositoryUrl: 'https://github.com/TeamSOBITS/sobit_mini',
+    icon: 'https://raw.githubusercontent.com/TeamSOBITS/sobit_mini/HEAD/sobit_mini/docs/img/sobit_mini.png',
   },
   {
     id: 'sobit-edu',
@@ -104,5 +113,6 @@ export const ROBOTS: Robot[] = [
       ].join('\n\n'),
     },
     repositoryUrl: 'https://github.com/TeamSOBITS/sobit_edu',
+    icon: 'https://raw.githubusercontent.com/TeamSOBITS/sobit_edu/HEAD/sobit_edu/docs/img/sobit_edu.png',
   },
 ]

@@ -45,6 +45,8 @@ export default defineNuxtConfig({
 
   image: {
     format: ['webp'],
+    // 外部の画像も、書き出しのときに取ってきて縮小できるようにする（ロボットのアイコン＝各リポジトリの README の画像）
+    domains: ['raw.githubusercontent.com'],
   },
 
   nitro: {
