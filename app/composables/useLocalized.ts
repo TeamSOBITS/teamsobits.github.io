@@ -1,4 +1,4 @@
-/** 日本語と英語を並べたデータ（例: { ja: '教育×ロボット', en: 'Education & Robotics' }） */
+/** 日本語と英語を並べたデータ（例: { ja: 'SOBITSの概要', en: 'About SOBITS' }） */
 export interface Localized {
   ja: string
   en: string

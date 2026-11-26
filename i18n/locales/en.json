@@ -37,6 +37,25 @@
       "heading": "NEWS"
     }
   },
+  "about": {
+    "title": "About",
+    "team": "Soka University Team SOBITS",
+    "overview": {
+      "heading": "About SOBITS",
+      "body": "SOBITS is composed of members of Choi Laboratory and Hagiwara Laboratory, Graduate School of Science and Technology, Soka University. Our research aims to realize a more comfortable society through the \"co-creation\" of robots and machines with people. As part of our research, we have participated in RoboCup{'@'}Home, a life support robot competition, and are developing robots such as SOBIT HOME, SOBIT LIGHT, and SOBIT PRO.\n\nCommunication in the laboratory is very active, and we work harmoniously on research and development, transcending the barriers between undergraduate and graduate students. The activities are centered on student-centered activities, and we are developing both software and hardware aspects of the robot with the aim of winning the robot competition by challenging anything and gaining knowledge and experience with a mindset that values independence."
+    },
+    "origin": {
+      "heading": "Origin of SOBITS",
+      "body": "The name \"SOBITS\" is derived from \"SOBIT,\" a robot synonymous with our laboratory. It was named by Dr. Choi after the light [빛: BIT] of Soka [SOKA], based on the meaning of \"the light of Soka University.\" Team SOBITS was formed in 2010, 10 years after Dr. Choi had his laboratory, in anticipation of the RoboCup, in which they would compete for the first time."
+    },
+    "robocup": {
+      "heading": "RoboCup",
+      "body": "RoboCup is a robotics competition that combines robotics and artificial intelligence to advance research and education on autonomous robots.\n\nTeam SOBITS is participating in \"RoboCup{'@'}Home,\" a competition that pits teams against each other to perform tasks that are useful to humans and their everyday lives. The competition is divided into four leagues: the \"Open Platform League,\" in which teams compete in advanced skills using robots they've built themselves; the \"Education League,\" in which teams compete in basic skills using actual robots; the \"Simulation Open Platform League,\" in which teams compete in human-robot interaction using robot simulators and VR; and the \"Domestic Standard Platform League,\" in which teams use Toyota's HSR robot to perform tasks that simulate the use of robots in everyday life."
+    },
+    "history": {
+      "heading": "The History of SOBITS"
+    }
+  },
   "research": {
     "title": "Research",
     "oss": {
