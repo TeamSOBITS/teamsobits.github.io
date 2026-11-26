@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** 全ページ共通のレイアウト: ヘッダー / ページ本体 / フッター */
+/** 全ページ共通のレイアウト: ヘッダー / ページ本体 / フッター / 先頭へ戻るボタン */
 
 // <html lang>、別言語版へのリンク（hreflang）などを言語に合わせて出力する
 const localeHead = useLocaleHead()
@@ -17,6 +17,7 @@ useHead(() => ({
       <slot />
     </main>
     <SiteFooter />
+    <BackToTop />
   </div>
 </template>
 
