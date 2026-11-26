@@ -68,5 +68,14 @@
   },
   "robots": {
     "title": "Robots"
+  },
+  "publications": {
+    "title": "Publications",
+    "sections": {
+      "awards": "学術活動における受賞",
+      "international": "国際学会発表",
+      "domestic": "国内学会発表",
+      "journals": "ジャーナル"
+    }
   }
 }

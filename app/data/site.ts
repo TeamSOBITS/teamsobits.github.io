@@ -19,7 +19,6 @@ export interface NavItem {
   label: string
   /** 言語の接頭辞（/ja）を除いたパス。言語は表示時に自動で付く */
   to: string
-  children?: NavItem[]
 }
 
 /**
@@ -31,15 +30,7 @@ export const NAVIGATION: NavItem[] = [
   { label: 'About', to: '/about' },
   { label: 'Research', to: '/research' },
   { label: 'Robots', to: '/robots' },
-  {
-    label: 'Publications',
-    to: '/publications',
-    children: [
-      { label: 'Awards for Academic Activities', to: '/publications#awards' },
-      { label: 'International conferences', to: '/publications#international' },
-      { label: 'Domestic conferences (Japan)', to: '/publications#domestic' },
-    ],
-  },
+  { label: 'Publications', to: '/publications' },
   { label: 'News', to: '/news' },
   { label: 'People', to: '/people' },
 ]

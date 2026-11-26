@@ -68,5 +68,14 @@
   },
   "robots": {
     "title": "Robots"
+  },
+  "publications": {
+    "title": "Publications",
+    "sections": {
+      "awards": "Awards for Academic Activities",
+      "international": "International conferences",
+      "domestic": "Domestic conferences (Japan)",
+      "journals": "Journals"
+    }
   }
 }
