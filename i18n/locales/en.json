@@ -95,5 +95,10 @@
     "researchTopic": "Research Topic",
     "skills": "Skills",
     "close": "Close"
+  },
+  "news": {
+    "title": "News",
+    "source": "Related page",
+    "back": "All news"
   }
 }

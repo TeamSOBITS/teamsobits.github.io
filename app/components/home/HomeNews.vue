@@ -7,9 +7,6 @@ const localize = useLocalized()
 const latest = computed(() =>
   [...NEWS].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3),
 )
-
-/** 2025-05-17 → 2025.05.17 */
-const formatDate = (date: string) => date.replaceAll('-', '.')
 </script>
 
 <template>

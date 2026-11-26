@@ -95,5 +95,10 @@
     "researchTopic": "研究テーマ",
     "skills": "スキル",
     "close": "閉じる"
+  },
+  "news": {
+    "title": "News",
+    "source": "関連ページ",
+    "back": "ニュース一覧へ"
   }
 }
